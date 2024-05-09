@@ -1,8 +1,8 @@
-﻿using APBD_Task_6.Models;
+﻿using APBD_Zadanie_6.Models;
 using Microsoft.AspNetCore.Mvc;
 using Zadanie5.Services;
 
-namespace Zadanie5.Controllers
+namespace APBD_Zadanie_6.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
