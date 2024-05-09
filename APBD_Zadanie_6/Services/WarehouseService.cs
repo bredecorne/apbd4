@@ -1,5 +1,5 @@
 ﻿using APBD_Task_6.Models;
-using System.Data.SqlClient;
+using MySqlConnector;
 
 namespace Zadanie5.Services
 {
@@ -15,8 +15,8 @@ namespace Zadanie5.Services
         public void AddProduct(ProductWarehouse productWarehouse)
         {
             var connectionString = _configuration.GetConnectionString("Database");
-            using var connection = new SqlConnection(connectionString);
-            using var cmd = new SqlCommand();
+            using var connection = new MySqlConnection(connectionString);
+            using var cmd = new MySqlCommand();
 
             cmd.Connection = connection;
 
